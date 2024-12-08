@@ -1,0 +1,15 @@
+Dicas para Testar
+
+
+Crie as Tabelas: Certifique-se de ter as tabelas ALUNOS, DISCIPLINAS, MATRICULAS, PROFESSORES e TURMAS.
+Teste Procedures:
+sql
+Copiar código
+BEGIN
+  PKG_ALUNO.EXCLUIR_ALUNO(1);
+END;
+/
+Chame as Functions:
+sql
+Copiar código
+SELECT PKG_PROFESSOR.TOTAL_TURMAS_PROFESSOR(1) FROM DUAL;
